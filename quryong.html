@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>뀨룡 존버</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.puzzle.js"></script>
+	<script type="text/javascript">
+			$(
+				function(){
+					var n = 0
+        					function countUp(){   //함수를 호출해준다. 
+            					n++               //1씩 증가하는 증가함수를 넣어준다.   
+        					$('.countUp').text(n)}
+					setInterval(countUp,1000);
+					$( "div.puzzle1, p" ).puzzle( 120 );	//퍼즐조각 사이즈 (작으면 작을수록 어려워집니다)		
+				}	
+			);
+</script>
+</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<p style="font-weight:bold;font-size:52px">오뀨 & 기룡</p>
+							<p style="font-size:28px">베스트 프렌드</p>
+						</header>
+						<body>
+							<p class="countUp" style ="font-size:48px">0</p> 
+							<div class="puzzle1" style ="margin: 0 auto;">
+							<img src="images/3.jpg" width="529" height="603" alt=""/>
+							</div>
+						</body>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; [크앙]레게년</li><li>Design For: 뀨룡단</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+
+</html>
